@@ -1,14 +1,60 @@
 body {
-    width: 100vw;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
     background-color: rgb(155, 98, 98);
     color: #fff;
     display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-auto-rows: 80px calc(100vh - 200px) 120px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer"
+        ;
+}
+.header {
+    grid-area: header;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: red;
+    padding: 0 20px;
+}
+
+.header .nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header .nav li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.aside {
+    grid-area: sidebar;
+    background-color: rgb(228, 223, 217);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main {
+    grid-area: main;
+    padding: 50px;
+    background-color: rgb(100, 105, 103);
 }
 
 .footer {
+    grid-area: footer;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 85, 81);
 }
 
 h1 {
