@@ -28,6 +28,10 @@ body {
 .item {
     width: 300px;
     height: 120px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item:nth-child(1) {
@@ -42,7 +46,15 @@ body {
     background-color: rgb(77, 95, 95);
 }
 
+.item:nth-child(4) {
+    background-color: rgb(139, 113, 73);
+}
 
+
+.item img {
+    width: 200px;
+    height: 100px;
+}
 
 .footer {
     display: flex;
