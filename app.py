@@ -31,6 +31,9 @@ def gisora():
 def edvard_p():
     return render_template("edvard_p.html")
 
+@app.route('/ignas/')
+def ignas():
+    return render_template("ignas.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
