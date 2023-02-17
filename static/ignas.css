@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(155, 98, 98);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
