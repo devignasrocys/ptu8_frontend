@@ -3,57 +3,7 @@ body {
     height: 100vh;
     background-color: rgb(155, 98, 98);
     color: #fff;
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.courses {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.item {
-    width: 300px;
-    height: 120px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.item:nth-child(1) {
-    background-color: rgb(119, 69, 69);
-}
-
-.item:nth-child(2) {
-    background-color: rgb(84, 126, 112);
-}
-
-.item:nth-child(3) {
-    background-color: rgb(77, 95, 95);
-}
-
-.item:nth-child(4) {
-    background-color: rgb(139, 113, 73);
-}
-
-
-.item img {
-    width: 200px;
-    height: 100px;
+    display: grid;
 }
 
 .footer {
