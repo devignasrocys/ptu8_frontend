@@ -47,6 +47,8 @@ def edvard_p():
 def egle():
     return render_template("egle.html")
 
+    
+
 
 if __name__ == "__main__":
     app.run(debug=True)
