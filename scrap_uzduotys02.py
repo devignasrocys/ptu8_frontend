@@ -52,6 +52,7 @@ while True:
             break
     guess_counter += 1
     if guess_counter == 3:
+        print(f"You guessed {guess_counter} times")
         print("You losse")
         ask_for_continue = input("Do you wanna continue y/n? ")
         if ask_for_continue == 'n':
