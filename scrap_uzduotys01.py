@@ -9,16 +9,18 @@ html = driver.page_source
 soup = BeautifulSoup(html, "html.parser")
 titles = soup.select('.CBarticleTitle')
 
-titles_with = []
 titles_without = []
+titles_with = []
+bad_words = ["COVID", "mirtis", "skiepai"]
 for title in titles:
     if ":" in title.get_text():
-        titles_with.append(title.get_text()[:title.get_text().index(":")])
-        titles_without.append(title.get_text()[title.get_text().index(":"):])
+        if not any(word in title.get_text() for word in bad_words):
+            titles_without.append(title.get_text()[:title.get_text().index(":")])
+            titles_with.append(title.get_text()[title.get_text().index(":"):])
 
-random.shuffle(titles_without)
-for index,title in enumerate(titles_with):
-    print(title + titles_without[index])
+random.shuffle(titles_with)
+for index,title in enumerate(titles_without):
+    print(title + titles_with[index])
 
 
 
