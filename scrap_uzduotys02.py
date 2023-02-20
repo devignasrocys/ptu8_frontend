@@ -34,7 +34,10 @@ while True:
     guess = input("Guess quotes autohor: ")
     if guess == game_material[quote_index]["author"]:
         print("You winn")
-        break
+        ask_for_continue = input("Do you wanna continue y/n? ")
+        if ask_for_continue == 'n'
+            break
+        continue
     guess_counter += 1
     if guess_counter == 1:
         print(game_material[quote_index]["author"].split()[0][0] + game_material[quote_index]["author"].split()[1][0])
